@@ -1,0 +1,820 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+
+/*Declaring variables*/
+:root{
+	--GRAY: #19191a;
+	--YELLOW: #ffc800;
+	--ORANGE: #ff7b00;
+	--LIGHT-BLUE: #0fafff;
+	--VIOLET: #6300db;
+	--BLUE: #2003b5;
+	--WHITE: #ffffff;
+
+	--SHADOW: 1px 1px 30px #000;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	overflow-x: hidden;
+	max-width: 100vw;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+#header{
+	background-color: var(--GRAY);
+	position: sticky;
+	top: 0;
+}
+
+#header a{
+text-decoration: none;
+text-transform: uppercase;
+color: var(--WHITE);
+}
+
+#logo{
+	position: absolute;
+	top: 0.7rem;
+	padding-left: 0.9rem;
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+#nav{
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-right: 2rem;
+}
+
+/*Styling the button into hamburgar icon*/
+
+#button::before{
+	content: '';
+	top: -8px;
+}
+
+#button::after{
+	content: "";
+	bottom: -8px;
+}
+
+ #button, #button::before, #button::after{
+	width: 25px;
+	position: absolute;
+	height: 3px;
+	background-color: var(--WHITE);
+	border: none;
+}
+
+
+#nav a{
+	padding: 0.9rem;
+	display: block;
+}
+
+#nav a:hover{
+	opacity: 0.7;
+}
+
+#nav a.active{
+	color: var(--ORANGE);
+}
+
+#nav .hb-icon{
+	display: none;
+}
+
+
+
+/*Styling landing page*/
+/*===========================*/
+
+.landing-page{
+	height: 100vh;
+	overflow: hidden;
+	padding: 1rem 2rem;
+}
+
+.landing-page .background:first-child{
+	background-color: var(--YELLOW);
+	width: 1000px;
+	height: 1000px;
+	transform: rotate(35deg);
+	position: absolute;
+	left: -40rem;
+	top: -5rem;
+	z-index: -1;
+	box-shadow: var(--SHADOW);
+}
+
+.landing-page .background:nth-child(2){
+	background-color: var(--LIGHT-BLUE);
+	width: 1000px;
+	height: 1000px;
+	transform: rotate(35deg);
+	position: absolute;
+	z-index: -2;
+	left: -9rem;
+	top: -1rem;
+	box-shadow: var(--SHADOW);
+}
+
+.landing-page .background:nth-child(3){
+	background-color: var(--VIOLET);
+	width: 1000px;
+	height: 1000px;
+	transform: rotate(35deg);
+	position: absolute;
+	z-index: -3;
+	left: 1rem;
+	top: -3rem;
+	box-shadow: var(--SHADOW);
+}
+
+.landing-page .background:nth-child(4){
+	background-color: var(--BLUE);
+	width: 1000px;
+	height: 1000px;
+	transform: rotate(35deg);
+	position: absolute;
+	z-index: -4;
+	left: 30rem;
+	top: -3rem;
+	box-shadow: var(--SHADOW);
+}
+
+.landing-page .header{
+	font-weight: normal;
+	font-size: 2.2rem;
+	padding: 1rem;
+	margin-top: 3rem;
+	margin-right:6rem;
+	color: var(--WHITE);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.landing-page .intro-text{
+	color: var(--WHITE);
+	margin-right:6rem;
+	font-size: 1.1rem;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.landing-page a{
+	text-decoration: none;
+	color: var(--GRAY);
+	background-color: var(--LIGHT-BLUE);
+	padding: 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: bold;
+}
+
+.landing-page a:hover{
+	background-color: var(--GRAY);
+	color: var(--WHITE);
+}
+
+/*================================*/
+/*End of landing page styling*/
+
+
+
+/*Styling the core-values section beginning*/
+/*========================================*/
+
+#core-values{
+	background-color: var(--GRAY);
+	padding: 1rem 2rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+#core-values .value{
+	color: var(--WHITE);
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 0.8rem;
+}
+
+.icon{
+	color: var(--YELLOW);
+}
+
+/*===================================================*/
+/*End of styling the core values section */
+
+
+
+/*Styling new section beginning*/
+/*========================================*/
+
+.customer-freedom{
+	background-color: var(--WHITE);
+	color: var(--GRAY);
+}
+
+.customer-freedom header{
+	font-size: 1.3rem;
+	padding: 1rem 4.2rem;
+	padding-top: 2rem;
+	font-weight: bold;
+}
+
+.customer-freedom p{
+	padding: 0rem 7rem;
+	font-size: 1rem;
+	text-align: center;
+}
+
+.customer-freedom a{
+	text-decoration: none;
+	font-size: 1.1rem;
+	color: var(--WHITE);
+	background-color: var(--YELLOW);
+	padding: 0.6rem 0.9rem;
+	max-width: 70px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.customer-freedom a:hover{
+	color: var(--GRAY);
+	background-color: var(--ORANGE);
+}
+
+/*=======================================*/
+/*End of styling new section*/
+
+
+
+/*Styling the projects section beginning*/
+/*========================================*/
+
+#our-works{
+	background-color: var(--YELLOW);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 2rem;
+}
+
+.work-sample{
+max-width: 300px;
+margin-right: 0.8rem;
+}
+
+.work-sample img{
+	width: 300px;
+	height: 200px;
+}
+
+.work-sample a{
+	text-decoration: none;
+	color: var(--GRAY);
+}
+
+.work-sample header{
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+.work-sample p{
+	font-size: 1rem;
+}
+
+/*==================================================*/
+/*End of styling the projects section*/
+
+
+
+/*Styling the team members section beginning*/
+/*========================================*/
+
+#team{
+	background-color: var(--WHITE);
+}
+
+#team header{
+	background-color: var(--GRAY);
+	color: var(--WHITE);
+	text-transform: uppercase;
+	padding: 0.6rem;
+	text-align: center;
+	font-size: 1.5rem;
+}
+
+.members{
+	margin-top: 0.7rem;
+	margin-bottom: 0.7rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.team-member{
+	max-width: 200px;
+	margin: 1rem;
+	text-align: center;
+}
+
+.team-member h1{
+	font-size: 1.1rem;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--ORANGE);
+	margin-bottom: 2px;
+}
+
+.team-member p{
+	font-size: 1rem;
+	font-style: italic;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+/*==========================================*/
+/*End of styling the team members section*/
+
+
+
+/*Styling the pricing section beginning*/
+/*========================================*/
+
+#pricing{
+	background-color: var(--GRAY);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.price-div{
+	background-color: var(--WHITE);
+	margin-top: 2rem;
+	margin-right: 2rem;
+	width: 300px;
+}
+
+.package{
+	font-size: 1.2rem;
+	color: var(--GRAY);
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+
+.amt{
+	background-color: var(--YELLOW);
+	color: var(--WHITE);
+	text-align: center;
+	font-weight: normal;
+}
+
+/*This is the dollar sign that comes before the amount*/
+
+.amt  sup {
+	font-size: 1rem;
+}
+  
+ #pricing ul{
+ 	padding-left: 0;
+ }
+
+#pricing li{
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	font-size: 1.3rem;
+	list-style-type: none;
+	text-align: center;
+}
+
+#pricing a{
+	display: block;
+	text-decoration: none;
+	font-size: 	1.1rem;
+	padding: 0.7rem;
+	text-align: center;
+	font-weight: bold;
+	color: 	var(--WHITE);
+	color:;
+}
+
+.price-div{
+	margin-bottom: 	2rem;
+}
+
+.price-div a{
+	background-color: gray;
+}
+
+/*This is the style for the yellow button in the pricing section */
+#yl_btn{
+	background-color: var(--YELLOW);
+}
+
+/*=================================*/
+/*End of pricing section styling*/
+
+
+
+/*Styling the testimonial section beginning*/
+/*========================================*/
+
+#testimonials{
+	background-color: var(--WHITE);
+	color: var(--GRAY);
+	text-align: center;
+	padding: 3rem 8rem;
+}
+
+#testimonials p:first-child{
+	font-size: 1.3rem;
+	font-weight: bolder;
+}
+
+#testimonials p:nth-child(2){
+	font-size: 1.2rem;
+	color: var(--ORANGE);
+	font-weight: bold;
+	margin-bottom:0 ;
+}
+
+#testimonials p:nth-child(3){
+	font-size: 1rem;
+	color: var(--GRAY);
+	font-style: oblique;
+	font-weight: bold;
+	margin-top: 0;
+}
+
+/*=========================================*/
+/*End of styling the testimonial section*/
+
+
+
+/*Styling the footer section beginning*/
+/*========================================*/
+
+#footer{
+	background-color: var(--GRAY);
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+#footer aside{
+	
+	max-width: 400px;
+	margin: 1rem;
+	font-size: 1rem;
+	color: var(--WHITE);
+	text-align: center;
+}
+
+#footer aside h1{
+	display: block;
+	text-align: center;
+}
+
+#footer aside p{
+	text-align: center;
+}
+
+#footer aside a{
+	text-decoration: none;
+	color: var(--WHITE);
+	font-size: 0.9rem;
+	font-weight: normal;
+}
+
+#footer aside ul{
+	padding-left: 0;
+}
+
+#footer aside ul li{
+	list-style-type: none;
+	padding-bottom: 0.8rem;
+	font-size: 0.9rem;
+	text-align: center;
+}
+
+/*=========================================*/
+/*End of styling the footer section*/
+
+
+#copyright{
+	background-color: var(--YELLOW);
+	color: var(--BLUE);
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1rem;
+	padding: 0.5rem;
+}
+
+#copyright a{
+	color: var(--GRAY);
+}
+
+#copyright a:hover{
+	text-decoration: none;
+	opacity: 0.7;
+}
+
+/*Hidig the hamburgar icon when in desktop/ largescreen mode*/
+.hamburgar{
+	
+	}
+
+
+
+
+
+/*Adding media queries to ensure responsiveness*/
+
+/*mobile devices*/
+@media only screen and (max-width: 480px){
+
+	.hamburgar{
+
+	}
+
+ 
+	.landing-page{
+	padding: 0.5rem 1rem;
+}
+
+.landing-page .background:first-child{
+	width: 700px;
+	height: 700px;
+	top: -10rem;
+}
+
+.landing-page .background:nth-child(2){
+	background-color: var(--LIGHT-BLUE);
+	width: 700px;
+	height: 700px;
+	left: -28rem;
+	top: -20rem;
+	box-shadow: var(--SHADOW);
+}
+
+.landing-page .background:nth-child(3){
+	background-color: var(--VIOLET);
+	width: 1000px;
+	height: 1000px;
+	transform: rotate(35deg);
+	position: absolute;
+	z-index: -3;
+	left: 1rem;
+	top: -3rem;
+	box-shadow: var(--SHADOW);
+}
+
+.landing-page .background:nth-child(4){
+	background-color: var(--BLUE);
+	width: 700px;
+	height: 700px;
+	transform: rotate(35deg);
+	border-radius: 5rem;
+	z-index: -2;
+	left: 22rem;
+	top: 1rem;
+}
+
+.landing-page .header{
+	font-size: 2.2rem;
+	padding: 0.7rem;
+	margin-top: 4.5rem;
+	margin-right:0;
+	text-align: center;
+}
+
+.landing-page .intro-text{
+	margin-right:0rem;
+	font-size: 1rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.landing-page a{
+	color: var(--GRAY);
+	background-color: var(--YELLOW);
+	padding: 0.7rem;
+	display: block;
+}
+
+#core-values{
+	padding: 0.7rem 1.2rem;
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: auto;
+}
+
+
+.customer-freedom header{
+	font-size: 1rem;
+	padding: 1rem 1.2rem;
+	text-align: center;
+}
+
+.customer-freedom p{
+	padding: 0rem 1.2rem;
+}
+
+.customer-freedom a{
+	color: var(--WHITE);
+	background-color: var(--VIOLET);
+	padding: 0.4rem 0.7rem;
+}
+
+#our-works{
+	padding-top: 1.5rem;
+}
+
+.work-sample{
+max-width: 300px;
+margin: auto;
+text-align: ;
+}
+
+.work-sample img{
+	width: 100%;
+	height: 160px;
+}
+
+.work-sample header{
+	font-size: 1.1rem;
+}
+
+.work-sample p{
+	font-size: 0.9rem;
+}
+
+#team header{
+	font-size: 1.3rem;
+}
+
+.team-member{
+	border: 1px solid var(--GRAY);
+}
+
+.price-div{
+	margin: 0.5rem;
+	max-width: 300px;
+}
+
+.amt{
+	color: var(--GRAY);
+	font-weight: bold;
+}
+
+#pricing li{
+	padding-top: 0.3rem;
+	padding-bottom: 0.3rem;
+}
+
+#pricing a{
+	padding: 0.5rem;
+}
+
+#testimonials{
+	padding: 1.8rem 1.2rem;
+}
+
+#testimonials p:first-child{
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+#testimonials p:nth-child(2){
+	font-size: 1rem;
+	color: var(--GRAY);
+	font-weight: bold;
+}
+
+#testimonials p:nth-child(3){
+	font-size: 0.8rem;
+	color: var(--BLUE);
+}
+
+#footer{
+	justify-content: center;
+}
+
+#footer aside{
+	
+	max-width: 300px;
+	margin: 0.5rem;
+	font-size: 1rem;
+}
+
+#footer aside h1{
+	font-size: 1.3rem;
+}
+
+#copyright{
+	font-size: 0.8rem;
+	font-weight: bold;
+	padding: 0.5rem;
+}
+
+
+}
+
+@media only screen and (min-width: 600px){
+	#core-values{
+	grid-template-columns: auto;
+}
+
+#core-values .value{
+	color: var(--WHITE);
+	font-size: 1rem;
+	line-height: 1.5rem;
+	margin: 0.5rem;
+}
+}
+
+
+
+/*styling for new nav*/
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f6f6f6;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: var(--LIGHT-BLUE);
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+/*This media query is solely for the menubar*/
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
